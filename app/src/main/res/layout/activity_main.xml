@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity" android:visibility="visible">
+
+
+    <TextView
+            android:text="Turno jugador = X"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/txt1" android:textSize="20sp"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="88dp"/>
+    <TableLayout
+            android:layout_height="match_parent"
+            tools:ignore="MissingConstraints" android:gravity="center" android:layout_width="match_parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0" app:layout_constraintVertical_bias="0.0"
+            android:id="@+id/tableLayout">
+
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="109dp" android:gravity="center_vertical|center">
+            <Button
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/btn1"
+                    android:onClick="gatoClick"
+                    android:textSize="60sp"
+            />
+            <Button
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" android:id="@+id/btn2"
+                    android:onClick="gatoClick"
+                    android:textSize="60sp"/>
+            <Button
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" android:id="@+id/btn3"
+                    android:onClick="gatoClick"
+                    android:textSize="60sp"/>
+        </TableRow>
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="109dp" android:gravity="center">
+            <Button
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" android:id="@+id/btn4"
+                    android:onClick="gatoClick"
+                    android:textSize="60sp"/>
+            <Button
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" android:id="@+id/btn5"
+                    android:onClick="gatoClick"
+                    android:textSize="60sp"/>
+            <Button
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" android:id="@+id/btn6"
+                    android:onClick="gatoClick"
+                    android:textSize="60sp"/>
+        </TableRow>
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="109dp" android:gravity="center_vertical|center">
+            <Button
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" android:id="@+id/btn7"
+                    android:onClick="gatoClick"
+                    android:textSize="60sp"/>
+            <Button
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" android:id="@+id/btn8"
+                    android:onClick="gatoClick"
+                    android:textSize="60sp"/>
+            <Button
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" android:id="@+id/btn9"
+                    android:onClick="gatoClick"
+                    android:textSize="60sp"/>
+        </TableRow>
+    </TableLayout>
+</android.support.constraint.ConstraintLayout>
